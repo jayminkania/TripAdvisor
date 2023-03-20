@@ -15,6 +15,6 @@ namespace Backend.Models
             public string c_gender { get; set; }
         public int c_cityid { get; set; }    
          public int c_mobile { get; set; } 
-          public string c_uimage    { get; set; }         
+          public string c_cimage    { get; set; }         
     }
 }
