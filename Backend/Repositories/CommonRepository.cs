@@ -8,14 +8,16 @@ namespace Backend.Repositories
 {
     public class CommonRepository
     {
-         protected NpgsqlConnection con;
+        protected NpgsqlConnection con;
+        
         public CommonRepository()
         {
-        IConfiguration myConfig=new ConfigurationBuilder()
-        .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
-        .AddJsonFile("appsettings.json")
-        .Build();
-        con=new NpgsqlConnection(myConfig.GetConnectionString("pgconn"));
+            IConfiguration myConfig = new ConfigurationBuilder()
+            .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+            .AddJsonFile("appsettings.json")
+            .Build();
+
+            con = new NpgsqlConnection(myConfig.GetConnectionString("pgconn"));
         }
     }
 }
