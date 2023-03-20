@@ -382,11 +382,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Inter003\\TripAdvisor\\TripAdvisor\\backend\\backend.csproj",
+      "projectUniqueName": "d:\\Inter003\\TripAdvisor\\TripAdvisor\\Backend\\backend.csproj",
       "projectName": "backend",
-      "projectPath": "D:\\Inter003\\TripAdvisor\\TripAdvisor\\backend\\backend.csproj",
+      "projectPath": "d:\\Inter003\\TripAdvisor\\TripAdvisor\\Backend\\backend.csproj",
       "packagesPath": "C:\\Users\\intern003\\.nuget\\packages\\",
-      "outputPath": "D:\\Inter003\\TripAdvisor\\TripAdvisor\\backend\\obj\\",
+      "outputPath": "d:\\Inter003\\TripAdvisor\\TripAdvisor\\Backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -447,5 +447,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.405\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file d:\\Inter003\\TripAdvisor\\TripAdvisor\\Backend\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
