@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/From_Layout.cshtml";
+}
+
+<h2>Register</h2>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+<table>
+    <tr>
+        <td>
+            <p>Username</p>
+        </td>
+        <td>
+            <input type="text" id="txtUserName" class="form-control" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Email</p>
+        </td>
+        <td>
+            <input type="email" id="txtEmail" class="form-control" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Gender</p>
+        </td>
+        <td>
+            <input type="radio" name="txtGender" value="Male" /> Male &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="txtGender" value="Female" /> Female &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="txtGender" value="Other" /> Other &nbsp;&nbsp;&nbsp;
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Password</p>
+        </td>
+        <td>
+            <input type="password" id="txtPassword" class="form-control" />
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="submit" value="Register" id="btnRegister" onclick="Register()" class="btn btn-default">Register</button>
+        </td>
+    </tr>
+</table>
+
+<script>
+    function Register() {
+        var user = {
+            c_username: $("#txtUserName").val(),
+            c_email: $("#txtEmail").val(),
+            c_gender: $("input[name='txtGender']:checked").val(),
+            c_password: $("#txtPassword").val()
+        }
+        var settings = {
+            "url": "http://localhost:58730/api/AuthApi/Register",
+            "method": "POST",
+            "timeout": 0,
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "data": JSON.stringify(user)
+        }
+        $.ajax(settings).done(function (response) {
+            alert("Successfully Registered!");
+            window.location = "/User/Login";
+        });
+    }
+</script>
