@@ -234,10 +234,12 @@
     <Compile Include="Bal\CityHelper.cs" />
     <Compile Include="Bal\Helper.cs" />
     <Compile Include="Bal\PlaceHelper.cs" />
+    <Compile Include="Bal\RateHelper.cs" />
     <Compile Include="Bal\UserHelper.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PlaceController.cs" />
+    <Compile Include="Controllers\RateController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -248,6 +250,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\t_city.cs" />
     <Compile Include="Models\t_place.cs" />
+    <Compile Include="Models\t_rate.cs" />
     <Compile Include="Models\t_user.cs" />
     <Compile Include="Models\VM_login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
