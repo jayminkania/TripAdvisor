@@ -48,245 +48,120 @@
             </td>
         </tr>
     </table>*@
-<link href="~/Scripts/main.css" rel="stylesheet" />
-<script src="~/Scripts/main.js"></script>
-<!DOCTYPE html>
 
+
+<!doctype html>
 <html lang="en">
-
 <head>
-
-    <title>Register - Tourago</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <link href="assets/img/favicon.png" rel="icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
-    <link type="text/css" href="assets/css/main.css" rel="stylesheet">
-    <!-- /CSS -->
+    <link href="~/Views/UserMVC/css/style.css" rel="stylesheet" />
 
+    <!-- Bootstrap CSS -->
+    <link href="~/Views/UserMVC/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Style -->
+    <link href="~/Views/UserMVC/css/style.css" rel="stylesheet" />
+
+    <link rel="icon" type="image/x-icon" href="~/Views/UserMVC/images/Logo.png">
+    <title>Registration</title>
 </head>
 <body>
-    <!-- Modal Register -->
-    <div class="modal fade" id="mdlRegister" data-bs-keyboard="false" tabindex="-1" aria-labelledby="mdlRegisterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="mdlRegisterTitle">Register for Tourago</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form class="needs-validation" method="post" novalidate="" action="dashboard.html">
 
-                        <hr>
-                        <!-- Register -->
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="mb-3">
-                                    <label for="txtEmail3" class="form-label">Email<span class="text-danger">*</span></label>
-                                    <input class="form-control form-control-lg shadow-sm" id="txtEmail3" name="email3" value="nakamoto@example.com" placeholder="" required="">
-                                    <div class="invalid-feedback">
-                                        Please enter Email.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="mb-3">
-                                    <label for="txtPassword3" class="form-label">Password<span class="text-danger">*</span></label>
-                                    <input class="form-control form-control-lg shadow-sm" id="txtPassword3" name="password3" placeholder="" value="123456" type="password" required="">
-                                    <div class="invalid-feedback">
-                                        Please enter password.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="mb-3">
-                                    <label for="txtRetypePassword3" class="form-label">Retype password<span class="text-danger">*</span></label>
-                                    <input class="form-control form-control-lg shadow-sm" id="txtRetypePassword3" name="retypepassword3" placeholder="" value="123456" type="password" required="">
-                                    <div class="invalid-feedback">
-                                        Please enter password.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-check mb-4">
-                            <input class="form-check-input" type="checkbox" value="" id="chckAgree3" required="" checked="">
-                            <label class="form-check-label" for="chckAgree3"> I agree to <a href="#" class="hover">terms and policy<span class="text-danger">*</span></a>. </label>
-                        </div>
-                        <div class="mb-4">
-                            <button class="btn btn-lg btn-primary w-50" id="btnSubmit3">
-                                <i class="ti ti-user-plus"></i>
-                                <span>Register</span>
-                            </button>
-                        </div>
-                        <div class="fw-bold-1">
-                            Already have an account? <a href="Login.cshtml" data-bs-toggle="modal" data-bs-dismiss="modal">Login</a>
-                        </div>
-                        <!-- Register -->
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /Modal Register -->
-    <!-- TITLE -->
-    <section id="title" class="pt-4 mb-5">
-        <!-- Title -->
-        <div class="page-title">
+
+    <div class="d-lg-flex half ">
+        <div class="bg order-1 order-md-2" style="background-image: url('~/Views/UserMVC/images/bg2.png');"></div>
+        <div class="contents order-2 order-md-1">
             <div class="container">
 
-                <!-- Heading -->
-                <div class="heading">
-                    <h1 class="title fs-1">Register</h1>
-                </div>
-                <!-- /Heading -->
-            </div>
-        </div>
-        <!-- /Title -->
-    </section>
-    <!-- /TITLE -->
-    <section id="login" class="section-mb-80">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-xl-4 col-lg-6 col-lg-8">
-                    <div class="card">
-                        <div class="card-body">
-                            <!-- Heading -->
-                            <div class="heading">
-                                <center> <h2 class="title fs-4">TripAdvisor Registeration</h2></center>
+                <div class="row align-items-center justify-content-center left-container ">
+
+                    <div class="col-md-7">
+                        <center> <img src="images/Logo.png" style="height: 200px; width: auto; padding-top: 5px; padding-bottom: 20px;" /></center>
+                        <h3>Registration</h3>
+                        <p class="mb-4">Once a year go somewhere you have never been before.</p>
+                        <form action="#" method="post">
+                            <div class="form-group first">
+                                <label for="username">Username</label>
+                                <input type="text" class="form-control" placeholder="Enter User Name" id="username">
                             </div>
-                            <!-- /Heading -->
-                            <hr>
-                            <!-- Form Register -->
-                            <form class="needs-validation" method="post" novalidate="" action="dashboard.html">
-
-
-                                <!-- Register -->
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="mb-3">
-                                            <label for="txtEmail4" class="form-label">Id<span class="text-danger">*</span></label>
-                                            <input class="form-control form-control-lg shadow-sm" id="txtid" name="id" placeholder="" required="">
-                                            <div class="invalid-feedback">
-                                                Please enter Id.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="mb-3">
-                                            <label for="txtEmail4" class="form-label">User Name<span class="text-danger">*</span></label>
-                                            <input class="form-control form-control-lg shadow-sm" id="txtname" name="name" placeholder="" required="">
-                                            <div class="invalid-feedback">
-                                                Please enter User Name.
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="col-12">
-                                        <div class="mb-3">
-                                            <label for="txtEmail4" class="form-label">Email<span class="text-danger">*</span></label>
-                                            <input class="form-control form-control-lg shadow-sm" id="txtEmail" name="email" placeholder="" required="">
-                                            <div class="invalid-feedback">
-                                                Please enter Email.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="mb-3">
-                                            <label for="txtPassword4" class="form-label">Password<span class="text-danger">*</span></label>
-                                            <input class="form-control form-control-lg shadow-sm" id="txtPassword" name="password" placeholder="" type="password" required="">
-                                            <div class="invalid-feedback">
-                                                Please enter password.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="mb-3">
-                                            <label for="txtEmail4" class="form-label">Gender<span class="text-danger">*</span></label>
-                                            <input type="radio" id="txtgender" name="gender" placeholder="" required="" value="male">Male
-                                            <input type="radio" id="txtgender" name="gender" placeholder="" required="" value="female">Female
-                                            <div class="invalid-feedback">
-                                                Please enter Gender.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="mb-3">
-                                            <label for="txtEmail4" class="form-label">Address<span class="text-danger">*</span></label>
-                                            <input class="form-control form-control-lg shadow-sm" id="txtaddress" name="address" placeholder="" required="">
-                                            <div class="invalid-feedback">
-                                                Please enter Address.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="mb-3">
-                                            <label for="txtEmail4" class="form-label">City<span class="text-danger">*</span></label>
-                                            <select name="city" id="city" class="form-control form-control-lg shadow-sm">
-                                                <option value="select">Select City</option>
-                                                <option value="Surat">Surat</option>
-                                                <option value="Ahemdabad">Ahemdabad</option>
-                                                <option value="Surat">Surat</option>
-                                                <option value="Vadodra">Vadodra</option>
-                                            </select>
-                                            <div class="invalid-feedback">
-                                                Please enter City.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="mb-3">
-                                            <label for="txtEmail4" class="form-label">Mobile<span class="text-danger">*</span></label>
-                                            <input type="number" class="form-control form-control-lg shadow-sm" id="txtmobile" name="mobile" placeholder="" required="">
-                                            <div class="invalid-feedback">
-                                                Please enter Mobile Number.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="mb-3">
-                                            <label for="txtEmail4" class="form-label">Image<span class="text-danger">*</span></label>
-                                            <input class="form-control form-control-lg shadow-sm" id="txtimg" name="img" placeholder="" required="">
-                                            <div class="invalid-feedback">
-                                                Please enter Image.
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-
+                            <div class="form-group first">
+                                <label for="email">Email</label>
+                                <input type="text" class="form-control" placeholder="your-email@gmail.com" id="username">
+                            </div>
+                            <div class="form-group last mb-3">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" placeholder="Your Password" id="password">
+                            </div>
+                            <div class="form-group last mb-3">
+                                <label for="gender">Gender</label>
+                                <div>
+                                    <input type="radio" name="txtGender" value="Male"> Male &nbsp;&nbsp;
+                                    <input type="radio" name="txtGender" value="Female"> Female &nbsp;&nbsp;
                                 </div>
-                                <div class="form-check mb-4">
-                                    <input class="form-check-input" type="checkbox" value="" id="chckAgree4" required="" checked="">
-                                    <label class="form-check-label" for="chckAgree4"> I agree to <a href="#" class="hover">terms and policy<span class="text-danger">*</span></a>. </label>
-                                </div>
-                                <div class="mb-4">
-                                    <button class="btn btn-lg btn-primary w-50" id="btnSubmit4">
-                                        <i class="ti ti-user-plus"></i>
-                                        <span>Register</span>
-                                    </button>
-                                </div>
-                                <div class="fw-bold-1">
-                                    Already have an account? <a href="Login.html">Login</a>
-                                </div>
-                                <!-- Register -->
-                            </form>
-                            <!-- Form Register -->
-                        </div>
+                            </div>
+                            <div class="form-group last mb-3">
+                                <label for="address">Address</label>
+                                <textarea id="address" name="address" class="form-control" rows="4" cols="50"></textarea>
+                            </div>
+                            <div class="form-group last mb-3">
+                                <label for="txtEmail4" class="form-label">City<span class="text-danger">*</span></label>
+                                <select name="city" id="city" class="form-control form-control-lg shadow-sm">
+                                    <option value="select">Select City</option>
+                                    <option value="Surat">Surat</option>
+                                    <option value="Ahemdabad">Ahemdabad</option>
+                                    <option value="Surat">Surat</option>
+                                    <option value="Vadodra">Vadodra</option>
+                                </select>
+                            </div>
+
+
+
+
+                            <div class="form-group last mb-3">
+                                <label for="txtEmail4" class="form-label">Mobile<span class="text-danger">*</span></label>
+                                <input type="number" class="form-control" id="txtmobile" name="mobile" placeholder="" required="">
+
+                            </div>
+
+
+                            <div class="form-group last mb-3">
+                                <label for="txtEmail4" class="form-label">Image<span class="text-danger">*</span></label>
+                                <input type="file" id="txtimg" name="img" placeholder="" required="">
+
+                            </div>
+
+                            <div class="d-flex mb-5 align-items-center">
+                                <label class="control control--checkbox mb-0">
+                                    <span class="caption">Remember me</span>
+                                    <input type="checkbox" checked="checked" />
+                                    <div class="control__indicator"></div>
+                                </label>
+                                <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span>
+
+                            </div>
+
+                            <input type="submit" value="Registration" class="btn btn-block btn-primary">
+                            <div class="text-center mt-4">
+                                <p>Click here to <a href="/index.html">Login</a></p>
+                            </div>
+
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    </main>
-    <!-- /MAIN -->
-    <!-- Go to top -->
-    <a href="#" class="scroll-top"><i class="ti ti-chevron-up"></i></a>
-    <!-- /Go to top -->
-    <!-- JS -->
+
+
+    </div>
+    <script src="@Url.Content("js/main.js")"></script>
+    <script src="~/Views/UserMVC/js/jquery-3.3.1.min.js"></script>
+    <script src="~/Views/UserMVC/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
 
     <script>
         function Register() {
