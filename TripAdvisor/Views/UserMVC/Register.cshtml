@@ -3,53 +3,6 @@
     Layout = null;
 }
 
-
-
-@*<script src="~/Scripts/jquery-1.10.2.min.js"></script>
-
-    <table>
-        <tr>
-            <td>
-                <p>Username</p>
-            </td>
-            <td>
-                <input type="text" id="txtUserName" class="form-control" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Email</p>
-            </td>
-            <td>
-                <input type="email" id="txtEmail" class="form-control" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Gender</p>
-            </td>
-            <td>
-                <input type="radio" name="txtGender" value="Male" /> Male &nbsp;&nbsp;&nbsp;
-                <input type="radio" name="txtGender" value="Female" /> Female &nbsp;&nbsp;&nbsp;
-                <input type="radio" name="txtGender" value="Other" /> Other &nbsp;&nbsp;&nbsp;
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Password</p>
-            </td>
-            <td>
-                <input type="password" id="txtPassword" class="form-control" />
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <button type="submit" value="Register" id="btnRegister" onclick="Register()" class="btn btn-default">Register</button>
-            </td>
-        </tr>
-    </table>*@
-
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -58,28 +11,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
-    <link href="~/Views/UserMVC/css/style.css" rel="stylesheet" />
+    <!-- Style -->
+    <link href="~/Content/UserMVC/css/style.css" rel="stylesheet" />
 
     <!-- Bootstrap CSS -->
-    <link href="~/Views/UserMVC/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Style -->
-    <link href="~/Views/UserMVC/css/style.css" rel="stylesheet" />
+    <link href="~/Content/UserMVC/css/bootstrap.min.css" rel="stylesheet" />
 
-    <link rel="icon" type="image/x-icon" href="~/Views/UserMVC/images/Logo.png">
-    <title>Registration</title>
+    <!-- Icon of Website -->
+    <link rel="icon" type="image/x-icon" href="~/Content/UserMVC/images/Logo.png">
+    <title>Register</title>
 </head>
 <body>
 
 
     <div class="d-lg-flex half ">
-        <div class="bg order-1 order-md-2" style="background-image: url('~/Views/UserMVC/images/bg2.png');"></div>
+        <div class="bg order-1 order-md-2" style="background-image: url('../Content/UserMVC/images/bg2.jpg');"></div>
         <div class="contents order-2 order-md-1">
             <div class="container">
 
                 <div class="row align-items-center justify-content-center left-container ">
 
                     <div class="col-md-7">
-                        <center> <img src="images/Logo.png" style="height: 200px; width: auto; padding-top: 5px; padding-bottom: 20px;" /></center>
+                        <center> <img src="~/Content/UserMVC/images/Logo.png" style="height: 200px; width: auto; padding-top: 5px; padding-bottom: 20px;" /></center>
                         <h3>Registration</h3>
                         <p class="mb-4">Once a year go somewhere you have never been before.</p>
                         <form action="#" method="post">
@@ -117,15 +70,11 @@
                                 </select>
                             </div>
 
-
-
-
                             <div class="form-group last mb-3">
                                 <label for="txtEmail4" class="form-label">Mobile<span class="text-danger">*</span></label>
                                 <input type="number" class="form-control" id="txtmobile" name="mobile" placeholder="" required="">
 
                             </div>
-
 
                             <div class="form-group last mb-3">
                                 <label for="txtEmail4" class="form-label">Image<span class="text-danger">*</span></label>
@@ -156,10 +105,11 @@
 
 
     </div>
-    <script src="@Url.Content("js/main.js")"></script>
-    <script src="~/Views/UserMVC/js/jquery-3.3.1.min.js"></script>
-    <script src="~/Views/UserMVC/js/bootstrap.min.js"></script>
-    
+
+    <script src="~/Content/UserMVC/js/jquery-3.3.1.min.js"></script>
+    <script src="~/Content/UserMVC/js/bootstrap.min.js"></script>
+    <script src="~/Content/UserMVC/js/main.js"></script>
+
 </body>
 </html>
 

@@ -224,20 +224,20 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Views\UserMVC\css\bootstrap.min.css" />
-    <Content Include="Views\UserMVC\css\style.css" />
-    <Content Include="Views\UserMVC\fonts\icomoon\demo-files\demo.css" />
-    <Content Include="Views\UserMVC\fonts\icomoon\demo-files\demo.js" />
-    <Content Include="Views\UserMVC\fonts\icomoon\demo.html" />
-    <Content Include="Views\UserMVC\fonts\icomoon\fonts\icomoon.svg" />
-    <Content Include="Views\UserMVC\fonts\icomoon\Read Me.txt" />
-    <Content Include="Views\UserMVC\fonts\icomoon\style.css" />
-    <Content Include="Views\UserMVC\images\bg2.jpg" />
-    <Content Include="Views\UserMVC\images\bg_1.jpg" />
-    <Content Include="Views\UserMVC\images\Logo.png" />
-    <Content Include="Views\UserMVC\js\bootstrap.min.js" />
-    <Content Include="Views\UserMVC\js\jquery-3.3.1.min.js" />
-    <Content Include="Views\UserMVC\js\main.js" />
+    <Content Include="Content\UserMVC\css\bootstrap.min.css" />
+    <Content Include="Content\UserMVC\css\style.css" />
+    <Content Include="Content\UserMVC\fonts\icomoon\demo-files\demo.css" />
+    <Content Include="Content\UserMVC\fonts\icomoon\demo-files\demo.js" />
+    <Content Include="Content\UserMVC\fonts\icomoon\demo.html" />
+    <Content Include="Content\UserMVC\fonts\icomoon\fonts\icomoon.svg" />
+    <Content Include="Content\UserMVC\fonts\icomoon\Read Me.txt" />
+    <Content Include="Content\UserMVC\fonts\icomoon\style.css" />
+    <Content Include="Content\UserMVC\images\bg2.jpg" />
+    <Content Include="Content\UserMVC\images\bg_1.jpg" />
+    <Content Include="Content\UserMVC\images\Logo.png" />
+    <Content Include="Content\UserMVC\js\bootstrap.min.js" />
+    <Content Include="Content\UserMVC\js\jquery-3.3.1.min.js" />
+    <Content Include="Content\UserMVC\js\main.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -274,14 +274,14 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\From_Layout.cshtml" />
     <Content Include="Views\UserMVC\Register.cshtml" />
-    <Content Include="Views\UserMVC\css\.DS_Store" />
-    <Content Include="Views\UserMVC\css\bootstrap.min.css.map" />
-    <Content Include="Views\UserMVC\fonts\.DS_Store" />
-    <Content Include="Views\UserMVC\fonts\icomoon\fonts\icomoon.eot" />
-    <Content Include="Views\UserMVC\fonts\icomoon\fonts\icomoon.ttf" />
-    <Content Include="Views\UserMVC\fonts\icomoon\fonts\icomoon.woff" />
-    <Content Include="Views\UserMVC\fonts\icomoon\selection.json" />
-    <Content Include="Views\UserMVC\images\.DS_Store" />
+    <Content Include="Content\UserMVC\css\.DS_Store" />
+    <Content Include="Content\UserMVC\css\bootstrap.min.css.map" />
+    <Content Include="Content\UserMVC\fonts\.DS_Store" />
+    <Content Include="Content\UserMVC\fonts\icomoon\fonts\icomoon.eot" />
+    <Content Include="Content\UserMVC\fonts\icomoon\fonts\icomoon.ttf" />
+    <Content Include="Content\UserMVC\fonts\icomoon\fonts\icomoon.woff" />
+    <Content Include="Content\UserMVC\fonts\icomoon\selection.json" />
+    <Content Include="Content\UserMVC\images\.DS_Store" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
